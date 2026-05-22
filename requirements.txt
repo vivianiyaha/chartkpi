@@ -1,3 +1,6 @@
-pandas
 streamlit
-plotly.express
+pandas
+numpy
+plotly
+requests
+python-dateutil
