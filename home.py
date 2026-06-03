@@ -1,15 +1,22 @@
 import streamlit as st
 
-attendance = st.Page("pages/attendance.py", title="Attendance")
-business = st.Page("pages/business.py", title="Business Appraisal")
-performance = st.Page("pages/performance.py", title="Performance Appraisal")
-admin = st.Page("pages/admin.py", title="Admin Panel")
+st.set_page_config(
+    page_title="HR/Admin Management System",
+    page_icon="logo.png",
+    layout="wide"
+)
 
-pg = st.navigation([
-    attendance,
-    business,
-    performance,
-    admin
-])
+st.image("logo.png", width=350)
 
-pg.run()
+st.title("HR/ADMIN MANAGEMENT SYSTEM")
+
+st.markdown("""
+### Welcome
+
+Use the sidebar to access:
+
+- Attendance Management
+- Business Department Appraisal
+- Staff Performance Appraisal
+- Admin Panel
+""")
