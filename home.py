@@ -21,10 +21,8 @@ with left_col:
     </div>
     """, unsafe_allow_html=True)
 
-    st.page_link(
-        "pages/1_Attendance.py",
-        label="Open Attendance System",
-        icon="📅"
+    if st.button("Open Attendance System"):
+    st.switch_page("pages/1_Attendance.py")
     )
 
     st.markdown("""
@@ -34,10 +32,8 @@ with left_col:
     </div>
     """, unsafe_allow_html=True)
 
-    st.page_link(
-        "pages/3_Staff_Performance_Appraisal.py",
-        label="Open Staff Performance Appraisal",
-        icon="📝"
+    if st.button("Open Performance Appraisal"):
+    st.switch_page("pages/3_Performancr_Appraisal.py")
     )
 
 with right_col:
@@ -49,11 +45,8 @@ with right_col:
     </div>
     """, unsafe_allow_html=True)
 
-    st.page_link(
-        "pages/2_Business_Department_Appraisal.py",
-        label="Open Business Department Appraisal",
-        icon="💼"
-    )
+    sif st.button("Open Business Department Appraisal"):
+    st.switch_page("pages/2_Business_Appraisal.py")
 
     st.markdown("""
     <div class="card">
@@ -62,8 +55,5 @@ with right_col:
     </div>
     """, unsafe_allow_html=True)
 
-    st.page_link(
-        "pages/4_Admin_Panel.py",
-        label="Open Admin Panel",
-        icon="🛠️"
-    )
+    if st.button("Open Admin Panel"):
+    st.switch_page("pages/4_Admin_Panel.py")
