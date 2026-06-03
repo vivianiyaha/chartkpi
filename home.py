@@ -23,7 +23,7 @@ with left_col:
 
     if st.button("Open Attendance System"):
     st.switch_page("pages/1_Attendance.py")
-    )
+    
 
     st.markdown("""
     <div class="card">
@@ -34,7 +34,7 @@ with left_col:
 
     if st.button("Open Performance Appraisal"):
     st.switch_page("pages/3_Performancr_Appraisal.py")
-    )
+    
 
 with right_col:
 
