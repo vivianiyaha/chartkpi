@@ -90,20 +90,20 @@ st.markdown("""
 # =========================================
 
 if st.session_state.page == "Attendance":
-attendance_app()
-st.stop()
+    attendance_app()
+    st.stop()
 
 elif st.session_state.page == "Performance":
-performance_app()
-st.stop()
+    performance_app()
+    st.stop()
 
 elif st.session_state.page == "Business":
-business_app()
-st.stop()
+    business_app()
+    st.stop()
 
 elif st.session_state.page == "Admin":
-admin_app()
-st.stop()
+    admin_app()
+    st.stop()
 
 # =========================================
 
