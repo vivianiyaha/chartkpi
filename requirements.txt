@@ -6,3 +6,7 @@ requests
 python-dateutil
 openpyxl
 pillow
+os                                                               
+base64                                                           
+mammoth                                                          
+BytesIO                                                 
