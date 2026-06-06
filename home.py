@@ -24,19 +24,19 @@ if "page" not in st.session_state:
 # =========================================
 # ROUTING (THIS FIXES YOUR ERROR)
 # =========================================
-if st.session_state.page == "Attendance":
+if st.session_state.page == "attendance":
     attendance_app()
     st.stop()
 
-if st.session_state.page == "Performance":
+if st.session_state.page == "performance_appraisal":
     performance_app()
     st.stop()
 
-if st.session_state.page == "Business":
+if st.session_state.page == "business":
     business_app()
     st.stop()
 
-if st.session_state.page == "Admin":
+if st.session_state.page == "admin_panel":
     admin_app()
     st.stop()
 
