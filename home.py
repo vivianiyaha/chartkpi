@@ -25,7 +25,7 @@ initial_sidebar_state="collapsed"
 # =========================================
 
 if "page" not in st.session_state:
-st.session_state.page = "Home"
+    st.session_state.page = "Home"
 
 # =========================================
 
