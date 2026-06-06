@@ -129,14 +129,11 @@ unsafe_allow_html=True
 left_col, right_col = st.columns(2)
 
 with left_col:
-
-```
-st.markdown("""
-<div class="card">
+    st.markdown("""
+    <div class="card">
     <h3>📅 Attendance Management</h3>
     <p>Track employee attendance records, punctuality, daily check-ins, and workforce presence.</p>
-</div>
-""", unsafe_allow_html=True)
+    </div>, unsafe_allow_html=True)
 
 if st.button("Open Attendance System"):
     st.session_state.page = "Attendance"
