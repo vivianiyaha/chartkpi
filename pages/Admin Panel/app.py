@@ -4,6 +4,10 @@ import base64
 import pandas as pd
 import mammoth
 from io import BytesIO
+import streamlit as st
+
+def main():
+    st.title("Admin Panel")
 
 # =========================
 # PAGE CONFIG
