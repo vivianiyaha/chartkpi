@@ -1,4 +1,2 @@
-import streamlit as st
-from attendance.app import main
-
-print("IMPORT WORKS")
+import attendance.app
+print("attendance import works")
