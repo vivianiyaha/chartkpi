@@ -5,9 +5,6 @@ from performance_appraisal.app import main as performance_app
 from business.app import main as business_app
 from admin_panel.app import main as admin_app
 
-# =========================================
-# PAGE CONFIG
-# =========================================
 st.set_page_config(
     page_title="HR/Admin Management System",
     page_icon="logo.png",
@@ -16,32 +13,7 @@ st.set_page_config(
 )
 
 # =========================================
-# SESSION STATE
-# =========================================
-if "page" not in st.session_state:
-    st.session_state.page = "Home"
-
-# =========================================
-# ROUTING (THIS FIXES YOUR ERROR)
-# =========================================
-if st.session_state.page == "attendance":
-    attendance_app()
-    st.stop()
-
-if st.session_state.page == "performance_appraisal":
-    performance_app()
-    st.stop()
-
-if st.session_state.page == "business":
-    business_app()
-    st.stop()
-
-if st.session_state.page == "admin_panel":
-    admin_app()
-    st.stop()
-
-# =========================================
-# CUSTOM CSS (UNCHANGED)
+# CUSTOM CSS (KEEP YOUR ORIGINAL)
 # =========================================
 st.markdown("""
 <style>
@@ -109,7 +81,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # =========================================
-# LOGO & HEADER
+# HEADER
 # =========================================
 col1, col2, col3 = st.columns([1,2,1])
 
@@ -120,8 +92,9 @@ st.markdown('<div class="main-title">HR/ADMIN MANAGEMENT SYSTEM</div>', unsafe_a
 st.markdown('<div class="sub-title">Smart HR Operations & Employee Analytics Platform</div>', unsafe_allow_html=True)
 
 # =========================================
-# DASHBOARD
+# DASHBOARD (DIRECT LAUNCH BUTTONS)
 # =========================================
+
 left_col, right_col = st.columns(2)
 
 with left_col:
@@ -134,40 +107,36 @@ with left_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Attendance System"):
-        st.session_state.page = "Attendance"
-        st.rerun()
+        attendance_app()
 
     st.markdown("""
     <div class="card">
         <h3>📝 Staff Performance Appraisal</h3>
-        <p>Analyze employee productivity and performance.</p>
+        <p>Analyze employee performance and productivity.</p>
     </div>
     """, unsafe_allow_html=True)
 
-    if st.button("Open Staff Performance Appraisal"):
-        st.session_state.page = "Performance"
-        st.rerun()
+    if st.button("Open Performance Appraisal"):
+        performance_app()
 
 with right_col:
 
     st.markdown("""
     <div class="card">
         <h3>💼 Business Department Appraisal</h3>
-        <p>Tracks department productivity and targets.</p>
+        <p>Tracks departmental performance and targets.</p>
     </div>
     """, unsafe_allow_html=True)
 
-    if st.button("Open Business Department Appraisal"):
-        st.session_state.page = "Business"
-        st.rerun()
+    if st.button("Open Business Appraisal"):
+        business_app()
 
     st.markdown("""
     <div class="card">
         <h3>🛠️ Admin Panel</h3>
-        <p>Manage administrative operations.</p>
+        <p>Manage system settings and operations.</p>
     </div>
     """, unsafe_allow_html=True)
 
     if st.button("Open Admin Panel"):
-        st.session_state.page = "Admin"
-        st.rerun()
+        admin_app()
