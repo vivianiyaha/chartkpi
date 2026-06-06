@@ -108,7 +108,7 @@ with left_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Attendance System"):
-        st.switch_page("pages/1_Attendance.py")
+        st.switch_page("pages/Attendance")
     
 
     st.markdown("""
@@ -119,7 +119,7 @@ with left_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Performance Appraisal"):
-        st.switch_page("pages/3_Performancr_Appraisal.py")
+        st.switch_page("pages/Performance-Appraisal")
     
 
 with right_col:
@@ -132,7 +132,7 @@ with right_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Business Department Appraisal"):
-        st.switch_page("pages/2_Business_Appraisal.py")
+        st.switch_page("pages/Business.py")
 
     st.markdown("""
     <div class="card">
@@ -142,4 +142,4 @@ with right_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Admin Panel"):
-        st.switch_page("pages/4_Admin_Panel.py")
+        st.switch_page("pages/Admin-Panel")
