@@ -108,7 +108,7 @@ with left_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Attendance System"):
-        st.switch_page("pages/Attendance")
+        st.switch_page("pages/Attendance.py")
     
 
     st.markdown("""
@@ -119,7 +119,7 @@ with left_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Performance Appraisal"):
-        st.switch_page("pages/Performance-Appraisal")
+        st.switch_page("pages/Performance-Appraisal.py")
     
 
 with right_col:
@@ -142,4 +142,4 @@ with right_col:
     """, unsafe_allow_html=True)
 
     if st.button("Open Admin Panel"):
-        st.switch_page("pages/Admin-Panel")
+        st.switch_page("pages/Admin-Panel.py")
